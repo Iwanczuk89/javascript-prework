@@ -1,8 +1,6 @@
-function playGame(PlayerInput) {
+function playGame(playerInput) {
 	clearMessages();
-	
 
-	
 	function getMoveName(argMoveId){
 		if(argMoveId == 1){
 	  	return 'kamień';
@@ -12,6 +10,8 @@ function playGame(PlayerInput) {
 		return 'nożyce';
 		}
 	}
+
+	
 
 	function displayResult(argComputerMove, argPlayerMove) {
 		if(argComputerMove == 'kamień' && argPlayerMove == 'papier') {
@@ -74,3 +74,4 @@ document.getElementById('play-paper').addEventListener('click', function(){
 document.getElementById('play-scissors').addEventListener('click', function(){
 	playGame(3);
 });
+
